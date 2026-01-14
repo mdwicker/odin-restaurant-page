@@ -4,6 +4,8 @@
     --text: #191716;
     --brand-accent: #E6AF2E;
     --brand-primary: #3D348B;
+
+    color: var(--text);
 }
 
 body {
@@ -13,11 +15,11 @@ body {
 }
 
 header {
-    height: 100px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-
+    justify-content: flex-end;
+    height: 100px;
+    border-bottom: 1px solid var(--text);
     background-color: var(--bgnd-subtle);
 }
 
@@ -29,5 +31,45 @@ nav {
 
 #content {
     flex: 1;
+    background-color: var(--bgnd-main);
+}
+
+.nav-button {
+    position: relative;
+    width: 200px;
+    margin-bottom: -1px;
+    border: 1px solid var(--text);
+    border-radius: 10px 10px 0 0;
+    
+    background-color: color-mix(in srgb, var(--bgnd-main) 60%, transparent);
+    color: var(--text);
+    outline: none;
+    
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.nav-button-inactive {    
+    background-color: color-mix(in srgb, var(--bgnd-main) 60%, transparent);
+}
+
+.nav-button-active {
+    border-bottom: none;
+    background-color: var(--bgnd-main);
+
+    box-shadow: 0 3px var(--brand-accent) inset;
+    cursor: auto;
+}
+
+.nav-button-inactive:hover {
+    background-color: color-mix(in srgb, var(--bgnd-main) 80%, transparent);
+}
+
+.nav-button:focus-visible {
+    outline: 2px solid var(--brand-primary);
+    outline-offset: -2px;
+}
+
+.nav-button-inactive:active {
     background-color: var(--bgnd-main);
 }
