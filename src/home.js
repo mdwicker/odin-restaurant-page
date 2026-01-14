@@ -35,22 +35,20 @@ function createHeroImage() {
     return figure;
 }
 
-function createCopy() {
+function createCopytext() {
     const copy = document.createElement("p");
     copy.textContent = "You've had one, yes, but what about a second? Come grab something to tide you over between breakfast and elevensies. Whether you prefer mushrooms, taters, or nice crispy bacon, we've got it all!";
     return copy;
 }
 
-
-
 const home = (() => {
     const homeNode = document.createElement("div");
-    homeNode.id = "home";
+    homeNode.classList.add("home-content");
 
     homeNode.append(
         createHeader(),
         createHeroImage(),
-        createCopy(),
+        createCopytext(),
     );
 
     return homeNode;

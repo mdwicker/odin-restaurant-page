@@ -45,7 +45,7 @@ nav {
     padding: 24px 0;
 }
 
-#home {
+.home-content {
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -63,7 +63,7 @@ nav {
     font-weight: 600;
 }
 
-.nav-button {
+.nav-btn {
     position: relative;
     width: 200px;
     margin-bottom: -1px;
@@ -78,11 +78,11 @@ nav {
     cursor: pointer;
 }
 
-.nav-button-inactive {    
+.nav-btn-inactive {    
     background-color: color-mix(in srgb, var(--bgnd-main) 60%, transparent);
 }
 
-.nav-button-active {
+.nav-btn-active {
     border-bottom: none;
     background-color: var(--bgnd-main);
 
@@ -90,40 +90,40 @@ nav {
     cursor: auto;
 }
 
-.nav-button-inactive:hover {
+.nav-btn-inactive:hover {
     box-shadow: 0 3px var(--brand-primary) inset;
 }
 
-.nav-button:focus-visible {
+.nav-btn:focus-visible {
     outline: 2px solid var(--brand-primary);
     outline-offset: -2px;
 }
 
-.nav-button-inactive:active {
+.nav-btn-inactive:active {
     background-color: var(--bgnd-main);
     box-shadow: 0 3px var(--brand-primary) inset;
 }
 
-#home figure {
+.home-content figure {
     width: 100%;
 }
 
-#home .hero-image {
+.home-content .hero-image {
     border: 4px solid var(--brand-primary);
     border-radius: 10px;
 }
 
-#home figcaption {
+.home-content figcaption {
     font-size: 0.9rem;
     text-align: center;
     font-style: italic;
 }
 
-#home figcaption em {
+.home-content figcaption em {
     text-decoration: underline;
 }
 
-#home p {
+.home-content p {
     font-size: 1.2rem;
     text-align: justify;
 }
