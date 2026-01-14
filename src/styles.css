@@ -10,6 +10,7 @@
 
 h1 {
     font-size: 2.5rem;
+    text-align: center;
 }
 
 
@@ -31,9 +32,11 @@ header {
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 50px;
+    justify-content: space-between;
+    width: clamp(500px, 70vw, 800px);
     padding: 0px 20px;
+    gap: 10px;
+    margin: auto;
 }
 
 #content {
@@ -48,7 +51,7 @@ nav {
     margin: auto;
     align-items: center;
     gap: 24px;
-    width: max(35vw, 500px);
+    width: max(35vw, 350px);
 }
 
 

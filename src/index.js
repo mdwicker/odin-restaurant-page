@@ -7,6 +7,3 @@ const homeTab = home;
 
 container.append(homeTab);
 
-// const imgnode = document.querySelector("img");
-// imgnode.src = heroImage;
-
