@@ -1,3 +1,33 @@
-h1 {
-    color: red;
+:root {
+    --bgnd-main: #E0E2DB;
+    --bgnd-subtle: #BEB7A4;
+    --text: #191716;
+    --brand-accent: #E6AF2E;
+    --brand-primary: #3D348B;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+    background-color: var(--bgnd-subtle);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+#content {
+    flex: 1;
+    background-color: var(--bgnd-main);
 }
