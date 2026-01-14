@@ -39,6 +39,7 @@ nav {
 #content {
     flex: 1;
     background-color: var(--bgnd-main);
+    padding: 24px 0;
 }
 
 #home {
@@ -46,7 +47,6 @@ nav {
     flex-direction: column;
     margin: auto;
     align-items: center;
-    padding-top: 24px;
     gap: 24px;
     width: max(35vw, 500px);
 }

@@ -1,6 +1,12 @@
 import "./reset.css";
 import "./styles.css";
-import heroImage from "./imgs/hero-image.jpg";
+import home from "./home.js";
 
-const imgnode = document.querySelector("img");
-imgnode.src = heroImage;
+const container = document.getElementById("content");
+const homeTab = home;
+
+container.append(homeTab);
+
+// const imgnode = document.querySelector("img");
+// imgnode.src = heroImage;
+
