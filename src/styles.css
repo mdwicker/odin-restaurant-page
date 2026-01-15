@@ -13,6 +13,15 @@ h1 {
     text-align: center;
 }
 
+h2 {
+    font-size: 1.7rem;
+}
+
+h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 
 /* Layout */
 
@@ -33,7 +42,7 @@ header {
 nav {
     display: flex;
     justify-content: space-between;
-    width: clamp(500px, 70vw, 800px);
+    width: clamp(300px, 70vw, 800px);
     padding: 0px 20px;
     gap: 10px;
     margin: auto;
@@ -52,6 +61,20 @@ nav {
     align-items: center;
     gap: 24px;
     width: max(35vw, 350px);
+}
+
+.menu-content {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: clamp(250px, 80vw, 900px);
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
 }
 
 
@@ -126,4 +149,34 @@ nav {
 .home-content p {
     font-size: 1.2rem;
     text-align: justify;
+}
+
+.menu-content h2 {
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.menu-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 15px;
+    border: 2px solid var(--brand-primary);
+    border-radius: 5px;
+    background-color: color-mix(in srgb, var(--bgnd-subtle) 60%, transparent);
+}
+
+.menu-card .menu-card-description {
+    flex: 1;
+    min-width: 225px;
+}
+
+.menu-card img {
+    border-radius: 5px;
+    border: 2px solid var(--brand-primary);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: center;
 }

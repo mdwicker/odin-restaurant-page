@@ -7,7 +7,7 @@ const contact = document.createElement("div");
 const container = document.getElementById("content");
 const tabs = { home, menu, contact }
 
-const NavController = (function (container, tabs) {
+const NavController = ((container, tabs) => {
     const nav = document.querySelector("nav");
     const btns = document.querySelectorAll(".nav-btn");
     let activeTab = "home";
@@ -36,6 +36,3 @@ const NavController = (function (container, tabs) {
         refresh();
     });
 })(container, tabs);
-
-
-
