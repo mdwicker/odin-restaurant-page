@@ -37,7 +37,7 @@ const contact = (() => {
             "When to visit",
             "Come on over any day between breakfast and elevensies."
         ),
-        createPostscript("Return transportation by wheelbarrow avaiable upon request.")
+        createPostscript("Return transportation by wheelbarrow available upon request.")
     );
 
     return contactNode;
