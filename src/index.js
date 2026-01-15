@@ -2,7 +2,7 @@ import "./reset.css";
 import "./styles.css";
 import home from "./home.js";
 import menu from "./menu.js";
-const contact = document.createElement("div");
+import contact from "./contact.js";
 
 const container = document.getElementById("content");
 const tabs = { home, menu, contact }

@@ -44,7 +44,7 @@ function createSidesSection() {
             imgAlt: "A pan of fried mushrooms"
         }),
         createMenuCard({
-            title: "Discout Carrots",
+            title: "Discount Carrots",
             description: "They may have taken a bit of a tumble, but they're still the perfect snack for the hungry hiker.",
             img: carrotsImage,
             imgAlt: "A number of broken carrots"
